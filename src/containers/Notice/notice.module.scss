@@ -1,0 +1,37 @@
+.notice_container{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  margin-left: auto;
+  
+    width: 70%;
+}
+.first_grid{
+    background-image: url("./image6.png");
+    top: 1575px;
+    left: 139px;
+    width: 352px;
+    height: 352px;
+}
+.first_grid p{
+    text-align: left;
+font: normal normal normal 14px/25px PT Sans;
+letter-spacing: 0px;
+color: #FFFFFF;
+opacity: 1;
+}
+
+.img_wrapper{
+    
+    margin: 10px;
+    top: 1574px;
+left: 507px;
+width: 353px;
+height: 353px;}
+
+.img_wrapper img {
+    margin-top: 8px;
+    vertical-align: middle;
+  }

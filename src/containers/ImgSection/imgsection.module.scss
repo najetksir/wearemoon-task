@@ -1,0 +1,40 @@
+.img_container{
+    display: grid;
+  grid-auto-flow: column;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    
+}
+.wrapper{
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.title{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.img_wrapper{
+   
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+    
+   
+  
+    
+}
+
+
+.img_wrapper img {
+    margin-top: 8px;
+    vertical-align: middle;
+  }
+  
+
+  

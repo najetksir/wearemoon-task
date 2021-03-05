@@ -1,0 +1,108 @@
+
+$green:#7DAF3F;
+$brown:#4D302B;
+$gray:#B7B7B7;
+.header{
+   
+    display:grid;
+    grid-template-columns: 30% 30% 40%;
+    grid-gap: 0px;
+    border-bottom: 1px solid rgb(231, 228, 228);
+    position :sticky;
+  }
+  
+  .site_logo{
+   
+    text-align: center;
+    border-top: 1px solid  rgb(231, 228, 228);
+    border-right: 1px solid rgb(231, 228, 228);
+   
+  }
+  .site_logo p:first-child{
+    color:$green;
+    display: inline;
+   
+  }
+  .site_logo p:last-child{
+    color: $brown;
+    display: inline;
+  }
+  .search_box input{ 
+    padding: 8px 24px;
+    border-radius: 2px;
+    
+    outline: none;
+    border: none;
+    font-size: 20px;
+    margin-bottom: 16px;
+    
+   
+    
+  }
+  .search_box img{
+   
+ 
+   
+   
+  }
+  /*.search_box::before{
+    content: "";
+    display: block;
+  border: 2px solid #ccc;
+  width:2px;
+  height: 20px;
+  float: left;
+  padding: 10px; 
+  min-width: 40px;
+  background-image: url('./searchIcon.png') ;
+  margin: 0 6px 0 0;
+  
+  }*/
+  .divider{
+    display:grid;
+    grid-template-columns: 40% 40% 30%;
+    grid-gap: 0px;
+    text-align: center;
+    border-top: 1px solid  rgb(231, 228, 228);
+    border-right: 1px solid rgb(231, 228, 228);
+    border-left: 1px solid rgb(231, 228, 228);;
+   
+  }
+ .magasin p{
+   color:$brown
+ }
+ 
+  .magasin p::before{
+    content: "";
+    display: block;
+  float: left;
+  padding: 10px; 
+  
+  background-image: url('./map.png') ;
+  margin: 0 6px 0 ;
+  }
+  .divider > div {
+   
+    text-align: center;
+    border-top: 1px solid  rgb(231, 228, 228);
+    border-right: 1px solid rgb(231, 228, 228);;
+  }
+.config{
+  background-color:$green  ; 
+  color:#ffff;
+  
+  }
+  .config p::before{
+    content: "";
+    display: block;
+  float: left;
+  padding: 10px; 
+  min-width: 20px;
+  background-image: url('./confiIcon.png') ;
+  margin: 0 6px 0 ;
+  }
+  .config:hover{
+    background-color:$brown;
+    
+  }
+ 
