@@ -1,0 +1,152 @@
+$green: #7daf3f;
+$brown: #4d302b;
+$gray: #b7b7b7;
+
+.navbar_container {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-gap: 0px;
+  border-bottom: 1px solid rgb(231, 228, 228);
+  background-color: white;
+  position: absolute;
+  margin-left: 11em;
+  width: 82%;
+  box-sizing: border-box;
+}
+
+.navbar_container > div {
+  text-align: center;
+  border-right: 1px solid rgb(231, 228, 228);
+  font: normal normal normal 16px/20px PT Sans;
+  letter-spacing: 0px;
+  color: #1f1f1f;
+  opacity: 1;
+}
+
+.nav1:hover,
+.realisation:hover {
+  background-color: $green;
+}
+
+/* dropdown style*/
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown_content {
+  display: none;
+  position: absolute;
+  background-image: url("./images/accueil.png");
+  min-width: 160px;
+  background-size: cover;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown_content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown_content a:hover {
+  background-color: $brown;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown_content {
+  display: block;
+  width: 100%;
+}
+.dropdown_content a:last-child {
+  background-color: $green;
+}
+/* contact style*/
+
+.contact {
+  position: relative;
+  display: block;
+}
+.contact:hover .contact_card {
+  display: block;
+  width: 100%;
+}
+.contact_card {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  background-color: #fff;
+}
+.img {
+  background-image: url("./images/accueil.png");
+  min-height: 165px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.img p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
+
+.wrapper p {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+  width: 20em;
+  font-size: 15px;
+  color: #4d302b;
+}
+.contact_card input[type=text] {
+  padding: 12px 20px;
+  display: block;
+  border: none;
+  border-bottom: 2px solid rgb(243, 238, 238);
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20em;
+  outline: none;
+}
+.contact_card textarea {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1em;
+  padding: 15px;
+  width: 17em;
+  color: #B7B7B7;
+  border:2px solid #ccc;
+  outline: none;
+  box-sizing: border-box;
+}
+.contact_card label{
+  width: 14em;
+  color: #B7B7B7;
+  text-align: left;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1em;
+}
+.contact_card input[type=submit] {
+  width: 100%;
+  background-color: $green;
+  color: white;
+  padding: 14px 20px;
+  border: none;
+  outline: none;
+}

@@ -6,17 +6,20 @@ export default function DropDown() {
  
   const [open, setOpen] = useState(false);
 
-  const handleClick = () => {
+  const handleEnter= (e) => {
+   
     setOpen(true);
   };
-  const handleLeave = () => {
+  const handleLeave = (e) => {
+  
+    
     setOpen(false);
   };
 
   return (
-    <div class={classes.dropdown}>
+    <div className={classes.dropdown} >
       {open ? (
-        <div class={classes.dropdown_content}>
+        <div class={classes.dropdown_content} onMouseLeave={handleLeave}>
           <Link to={'produits'}>Lame en composite</Link>
           <Link>Lame en Bois</Link>
           <Link> Panneau Bois</Link>
@@ -26,8 +29,8 @@ export default function DropDown() {
           <Link> Boutique</Link>
         </div>
       ) : (
-        <div onMouseEnter={handleClick} onMouseLeave={handleLeave}>
-          <p>Boutique</p>
+        <div onMouseEnter={handleEnter} >
+          <p >Boutique</p>
         </div>
       )}
     </div>

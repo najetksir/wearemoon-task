@@ -1,108 +1,120 @@
+$green: #7daf3f;
+$brown: #4d302b;
+$gray: #b7b7b7;
+$border-color: #e2e2e2;
 
-$green:#7DAF3F;
-$brown:#4D302B;
-$gray:#B7B7B7;
-.header{
-   
-    display:grid;
-    grid-template-columns: 30% 30% 40%;
-    grid-gap: 0px;
-    border-bottom: 1px solid rgb(231, 228, 228);
-    position :sticky;
-  }
-  
-  .site_logo{
-   
-    text-align: center;
-    border-top: 1px solid  rgb(231, 228, 228);
-    border-right: 1px solid rgb(231, 228, 228);
-   
-  }
-  .site_logo p:first-child{
-    color:$green;
-    display: inline;
-   
-  }
-  .site_logo p:last-child{
-    color: $brown;
-    display: inline;
-  }
-  .search_box input{ 
-    padding: 8px 24px;
-    border-radius: 2px;
-    
-    outline: none;
-    border: none;
-    font-size: 20px;
-    margin-bottom: 16px;
-    
-   
-    
-  }
-  .search_box img{
-   
- 
-   
-   
-  }
-  /*.search_box::before{
-    content: "";
-    display: block;
-  border: 2px solid #ccc;
-  width:2px;
-  height: 20px;
+.header {
+  display: grid;
+  grid-template-columns: 30% 30% 40%;
+  grid-gap: 0px;
+  border: 1px solid $border-color;
+  position: sticky;
+  width: 100%;
+height: 70px;
+  font: normal normal normal 16px/20px PT Sans;
+  letter-spacing: 0px;
+  opacity: 1;
+}
+
+.site_logo {
+  position: relative;
+  text-align: center;
+  border-top: 1px solid $border-color;
+  border-right: 1px solid $border-color;
+}
+.logoWrapper {
+  position: absolute;
+  top: 30%;
+  left: 40%;
+  font-size: 150%;
+}
+.site_logo p:first-child {
+  top: 50%;
+  color: $green;
+  display: inline;
+}
+.site_logo p:last-child {
+  color: #4d302b;
+  display: inline;
+}
+
+.search_box {
+  position: relative;
+  border-top: 1px solid $border-color;
+}
+.search_box input {
+  width: 100%;
+  box-sizing: border-box;
+  border: none;
+  font-size: 16px;
+  background-image: url("searchIcon.png");
+  background-position: 5px 2px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 20px 40px;
+  outline: none;
+  position: absolute;
+  bottom: 10%;
+  top: 30%;
+  //left: 15px;
+}
+
+.divider {
+  display: grid;
+  grid-template-columns: 40% 40% 30%;
+  grid-gap: 0px;
+  //text-align: center;
+  border-right: 1px solid rgb(231, 228, 228);
+  border-left: 1px solid rgb(231, 228, 228);
+}
+
+.magasin{
+  position: relative;
+}
+.magasin p {
+  color: $brown;
+  /*position: absolute;
+  top: 10px;
+  left: 25px;
+}
+
+.magasin p::before {
+  content: "";
+  display: block;
   float: left;
-  padding: 10px; 
-  min-width: 40px;
-  background-image: url('./searchIcon.png') ;
-  margin: 0 6px 0 0;
-  
-  }*/
-  .divider{
-    display:grid;
-    grid-template-columns: 40% 40% 30%;
-    grid-gap: 0px;
-    text-align: center;
-    border-top: 1px solid  rgb(231, 228, 228);
-    border-right: 1px solid rgb(231, 228, 228);
-    border-left: 1px solid rgb(231, 228, 228);;
-   
-  }
- .magasin p{
-   color:$brown
- }
+  background-image: url("./map.png");
+  background-position: 5px 2px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 20px 40px;*/
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 16px;
+  background-image: url("map.png");
+  background-position: 70px 8px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 20px 40px;
+  position: absolute;
  
-  .magasin p::before{
-    content: "";
-    display: block;
-  float: left;
-  padding: 10px; 
-  
-  background-image: url('./map.png') ;
-  margin: 0 6px 0 ;
-  }
-  .divider > div {
-   
-    text-align: center;
-    border-top: 1px solid  rgb(231, 228, 228);
-    border-right: 1px solid rgb(231, 228, 228);;
-  }
-.config{
-  background-color:$green  ; 
-  color:#ffff;
-  
-  }
-  .config p::before{
-    content: "";
-    display: block;
-  float: left;
-  padding: 10px; 
-  min-width: 20px;
-  background-image: url('./confiIcon.png') ;
-  margin: 0 6px 0 ;
-  }
-  .config:hover{
-    background-color:$brown;
-    
-  }
- 
+}
+.divider > div {
+  text-align: center;
+  border-top: 1px solid $border-color;
+  border-right: 1px solid $border-color;
+}
+.config {
+  background-color: $green;
+  position: relative;
+}
+.config p{
+  color: #ffff;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 16px;
+  background-image: url("confiIcon.png");
+  background-position: 70px 8px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 20px 40px;
+  position: absolute;
+}
+.config:hover {
+  background-color: $brown;
+}
