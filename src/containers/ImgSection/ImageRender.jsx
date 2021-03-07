@@ -7,7 +7,7 @@ const ImageRender = (props) =>{
     return(
         <div className={classes.img_wrapper}>
             
-            <img src={props.img}  alt="" width="200" height="267" />
+            <img src={props.img}  alt=""  />
             
         </div>
     )
